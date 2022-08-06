@@ -29,7 +29,7 @@
           </a>
           <ul class="header-list list">
             <li class="header-item">
-              <a href="" class="header-link link">Студія</a>
+              <a href="" class="header-link link active">Студія</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link link">Портфоліо</a>
@@ -64,7 +64,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -422,16 +424,17 @@
         </div>
       </div>
     </footer>
-    <div class="overlay">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <!-- <button>
-          <svg class="modal-icon" width="11" height="11">
+        <button type="button" class="modal-clouse" data-modal-close>
+          <svg class="modal-icon" width="18" height="18">
             <use
-              href="./images/symbol-defs.svg.#icon-close-black-18dp-2-1-1-1"
+              href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-2-1"
             ></use>
           </svg>
-        </button> -->
+        </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
